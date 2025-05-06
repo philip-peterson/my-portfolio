@@ -113,14 +113,15 @@
             <h2>Copia Automation: Diffing and Merge Tool (2022)</h2>
             <div class="par">
                 The software behind conveyor belts, robotics, and machinery (known as
-                "Industrial Automation") is stuck in the Dark Ages. When controls engineers need to change code,
-                they typically edit project files without version control, attempting to manually track the versions via
+                "Industrial Automation") was stuck in the Dark Ages. When controls engineers needed to change code,
+                they typically edited project files without version control, attempting to manually track the versions via
                 filename. This procedure is prone to error, data loss, and lack of visibility.
             </div>
             <div class="par">
-                Therefore, there were opportunities abound to sell a record-keeping system to these
-                engineers. And what better to power records than Git, the distributed version control system? COPIA is an
-                application similar to Github but for managing industrial automation code.
+                That all changed when Copia came around. Copia offers a record-keeping system to these
+                engineers in the PLC (Programmable Logic Controller) space. It does this by packaging
+                Git with additional vendor extensions and hosting it on a platform similar to Github.
+                It therefore allows for a system of record for managing industrial automation code.
             </div>
             <div class="center">
                 <a href="images/image3.png" target="_blank">
@@ -153,20 +154,26 @@
                 </div>
 
                 <div class="par">
-                    Close collaboration between me and our designer, Sinan Goral, was key to this
-                    project. Myriad edge cases required support, since certain blocks in a project might be password-protected
-                    and could not be displayed, but they still needed to be logically mergeable.
+                    Interestingly, graph-based merge conflicts are quite complex to visualize. There are three sources of truth
+                    in a merge conflict: source, base, and target. Showing them all while still maintaining usability was a real 
+                    design challenge.
+                </div>
+
+                <div class="par">
+                    Close collaboration, therefore, between me and our designer, Sinan Goral, was key to this
+                    project. Many divergent special cases developed, since certain blocks in a project might be password-protected
+                    and could not be displayed, but they still needed to be logically mergeable. Those blocks may also have failed
+                    to load due to a number of other vendor-specific issues, which also needed to be explained to the user.
                 </div>
                 <div class="par">
-                    The end result was a sophisticated but user-friendly 
+                    The end result was a sophisticated but still user-friendly 
                     <a
                         href="https://www.google.com/url?q=https://www.youtube.com/watch?v%3DpaqgAPDMaBo&amp;sa=D&amp;source=editors&amp;ust=1746211254534184&amp;usg=AOvVaw3eofNAfnt3i54MexDWzI9h">
                         diffing and merging tool</a>
-                    &nbsp;for use in a vertical so absent of productivity
-                    upgrades that they still employ floppy disks regularly.
+                    &nbsp;for use in a vertical badly needing a transformative product.
                 </div>
                 <div class="par">
-                    Proud to say we improved people's lives and workflows on this one!
+                    Based on the customer feedback, I am proud to say we improved people's lives and workflows on this one!
                 </div>
             </div>
             <hr style="page-break-before:always;display:none;">
